@@ -2,6 +2,8 @@
 
 Tried to learn Vue.js, here is the result.
 
+Data taken from [Rick and Morty API](https://rickandmortyapi.com/)
+
 ## Project setup
 
 ```bash
