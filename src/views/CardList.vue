@@ -4,6 +4,7 @@
     <div v-if="response">
       <Card
         v-for="char in response.body.results"
+        v-bind:id="char.id"
         v-bind:key="char.id"
         v-bind:image="char.image"
         v-bind:title="char.name"
@@ -28,12 +29,14 @@ export default {
   },
   methods: {
     request() {
-      return this.$http.get('https://rickandmortyapi.com/api/character/');
+      return this.$http.get('https://rickandmortyapi.com/api/character/?gender=female');
     },
   },
 };
 </script>
 
 <style>
-
+.container{
+  display: inline;
+}
 </style>
