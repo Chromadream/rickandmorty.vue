@@ -25,7 +25,7 @@ export default {
   methods: {
     request() {
       const id = this.$route.params.id;
-      const url = 'https://rickandmortyapi.com/api/character/'+id;
+      const url = `https://rickandmortyapi.com/api/character/${id}`;
       console.log(id);
       return this.$http.get(url);
     },
