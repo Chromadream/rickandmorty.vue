@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="This is a test page, actual card list link below"/>
+    <HelloWorld msg="This is a test page"/>
   </div>
 </template>
 
